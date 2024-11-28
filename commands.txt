@@ -1,0 +1,21 @@
+## to create python virutal environment
+python -m venv git_venv
+
+## To activate environment (windows cmd)
+cd git_venv
+. Scripts/activate
+
+## To activate environment (git bash)
+source git_venv/Scripts/activate
+
+## install requirements.txt
+pip install -r requirements.txt
+
+## run app.py and go to http://localhost:5000/apidocs to verify it is accessible 
+python app.py 
+
+## build a docker image (make sure docker desktop is up)
+docker build -t dataaiopshub/git_action .
+
+## Check if image is running in container
+docker run -p 8000:5000 -it dataaiopshub/git_action
