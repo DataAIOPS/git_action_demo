@@ -19,3 +19,25 @@ docker build -t dataaiopshub/git_action .
 
 ## Check if image is running in container
 docker run -p 8000:5000 -it dataaiopshub/git_action 
+
+## now create folder=> .github/workflows and inside that create file cicd.yaml
+
+## now to go to github and create demo repo
+
+## now add your github repo to your project
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin <<URL of your github repo>>
+git push origin main
+
+## now lets go to github repo => actions and verify if action is running. however this may get failed since we have not yet crearted secrets
+
+## to create a github repo secrets follow below.
+1. go to github repo
+2. settings
+3. secrets and variable
+4. actions
+5. click on new repository secrets
+6. create secrets for DOCKER_USERNAME => your docker hub username and DOCKER_PASSWORD => your DOCKER_PASSWORD
