@@ -18,4 +18,4 @@ python app.py
 docker build -t dataaiopshub/git_action .
 
 ## Check if image is running in container
-docker run -p 8000:5000 -it dataaiopshub/git_action
+docker run -p 8000:5000 -it dataaiopshub/git_action 
