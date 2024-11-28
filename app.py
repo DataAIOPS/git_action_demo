@@ -29,7 +29,7 @@ def substraction():
     a=request.args.get("a")
     b=request.args.get("b")
     c=int(b)-int(a)
-    return f"substraction of {b}-{a}={c}"
+    return f"your substraction of {b}-{a}={c}"
 
 @app.route('/addition')
 def addition():
